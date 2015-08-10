@@ -30,3 +30,4 @@ proguard/
 
 # Eclipse workspace files
 .metadata/
+.recommenders/
