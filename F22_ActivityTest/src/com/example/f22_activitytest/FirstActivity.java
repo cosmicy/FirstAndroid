@@ -2,6 +2,8 @@ package com.example.f22_activitytest;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
@@ -26,6 +28,30 @@ public class FirstActivity extends Activity {
 			}
 			
 		});
+	}
+
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// TODO Auto-generated method stub
+		//添加inflate,显示菜单
+		getMenuInflater().inflate(R.menu.main, menu);
+		return super.onCreateOptionsMenu(menu);
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		// TODO Auto-generated method stub
+		//定义菜单响应事件
+		switch(item.getItemId()) {
+		case R.id.add_item:
+			Toast.makeText(this, "You clicked Add", Toast.LENGTH_SHORT).show();
+			break;
+		case R.id.remove_item:
+			Toast.makeText(this, "You clicked Remove", Toast.LENGTH_SHORT).show();
+			break;
+		}
+		
+		return super.onOptionsItemSelected(item);
 	}
 
 }
