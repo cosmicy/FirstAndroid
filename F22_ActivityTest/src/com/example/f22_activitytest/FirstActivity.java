@@ -24,7 +24,9 @@ public class FirstActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				Toast.makeText(FirstActivity.this, "you clicked button1", Toast.LENGTH_SHORT).show();
+				//Toast.makeText(FirstActivity.this, "you clicked button1", Toast.LENGTH_SHORT).show();
+				//修改为结束这个activity
+				finish();
 			}
 			
 		});
