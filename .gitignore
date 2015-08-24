@@ -29,5 +29,6 @@ proguard/
 .idea/
 
 # Eclipse workspace files
-.metadata/
+#.metadata/
+.plugins
 .recommenders/
