@@ -1,6 +1,7 @@
 package com.example.f22_activitytest;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -25,8 +26,13 @@ public class FirstActivity extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				//Toast.makeText(FirstActivity.this, "you clicked button1", Toast.LENGTH_SHORT).show();
+				
 				//修改为结束这个activity
-				finish();
+				//finish();
+				
+				//启动第二个activity
+				Intent intent = new Intent(FirstActivity.this, SecondActivity.class);
+				startActivity(intent);
 			}
 			
 		});
